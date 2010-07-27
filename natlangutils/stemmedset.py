@@ -44,7 +44,7 @@ class StemmedSet(object):
         >>> text & s
         set(['universe'])
         """
-        return set(w for w in (StemmedSet(obj) & self))
+        return set(StemmedSet(obj) & self)
 
     def __str__(self):
         """
